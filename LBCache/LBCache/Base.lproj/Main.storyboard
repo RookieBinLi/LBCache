@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2u-97-7wW">
+                                <rect key="frame" x="67" y="74" width="241" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.41294749019999999" blue="0.36324073109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="g0p-Dk-deM"/>
+                                    <constraint firstAttribute="height" constant="30" id="jPi-lf-8RU"/>
+                                </constraints>
+                                <state key="normal" title="缓存对象"/>
+                                <connections>
+                                    <action selector="cacheObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4t-p3-3sd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-EV-TG0">
+                                <rect key="frame" x="67" y="131" width="241" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.41294749019999999" blue="0.36324073109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="MZF-Vc-hZy"/>
+                                    <constraint firstAttribute="height" constant="30" id="bhe-6M-5RW"/>
+                                </constraints>
+                                <state key="normal" title="获得对象"/>
+                                <connections>
+                                    <action selector="readObejct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R30-cq-ERN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-r2-qI5">
+                                <rect key="frame" x="67" y="195" width="241" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.41294749019999999" blue="0.36324073109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="X6y-CK-hsz"/>
+                                    <constraint firstAttribute="width" constant="241" id="yvF-qe-Y61"/>
+                                </constraints>
+                                <state key="normal" title="缓存图片"/>
+                                <connections>
+                                    <action selector="cacheImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAH-g7-H8c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juE-dM-Eij">
+                                <rect key="frame" x="67" y="258" width="241" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.41294749019999999" blue="0.36324073109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="OPY-i4-qsN"/>
+                                    <constraint firstAttribute="height" constant="30" id="p7e-0a-eeG"/>
+                                </constraints>
+                                <state key="normal" title="获取图片"/>
+                                <connections>
+                                    <action selector="readImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buj-8F-ksd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f6I-l9-2FU">
+                                <rect key="frame" x="68" y="439" width="240" height="151"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8P-Y8-62E">
+                                <rect key="frame" x="67" y="324" width="241" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.41294749019999999" blue="0.36324073109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="IHP-8D-Ncw"/>
+                                    <constraint firstAttribute="height" constant="30" id="MvF-O5-EJP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="fWq-ud-aHA"/>
+                                    <constraint firstAttribute="width" constant="241" id="s7c-Ko-2WP"/>
+                                </constraints>
+                                <state key="normal" title="删除缓存图片"/>
+                                <connections>
+                                    <action selector="deleteImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mj-gb-a5a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E8P-Y8-62E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8GT-eA-Pye"/>
+                            <constraint firstItem="f6I-l9-2FU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="8iA-gp-Jag"/>
+                            <constraint firstItem="E8P-Y8-62E" firstAttribute="top" secondItem="juE-dM-Eij" secondAttribute="bottom" constant="36" id="99S-YM-YHO"/>
+                            <constraint firstItem="3Xb-r2-qI5" firstAttribute="top" secondItem="mvH-EV-TG0" secondAttribute="bottom" constant="34" id="K4k-97-y1Y"/>
+                            <constraint firstItem="juE-dM-Eij" firstAttribute="top" secondItem="3Xb-r2-qI5" secondAttribute="bottom" constant="33" id="LYu-bc-6fC"/>
+                            <constraint firstItem="N2u-97-7wW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="Olw-Mg-rmZ"/>
+                            <constraint firstItem="mvH-EV-TG0" firstAttribute="top" secondItem="N2u-97-7wW" secondAttribute="bottom" constant="27" id="QLP-MJ-pn9"/>
+                            <constraint firstItem="juE-dM-Eij" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QZk-au-5Vn"/>
+                            <constraint firstItem="f6I-l9-2FU" firstAttribute="top" secondItem="juE-dM-Eij" secondAttribute="bottom" constant="151" id="Rcr-as-HNM"/>
+                            <constraint firstItem="mvH-EV-TG0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ru8-rO-apm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f6I-l9-2FU" secondAttribute="trailing" constant="51" id="eAS-QG-wtM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f6I-l9-2FU" secondAttribute="bottom" constant="77" id="gep-ts-iaI"/>
+                            <constraint firstItem="3Xb-r2-qI5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMM-WF-NGZ"/>
+                            <constraint firstItem="N2u-97-7wW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n96-sa-FMH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="f6I-l9-2FU" id="EJt-ag-f47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
